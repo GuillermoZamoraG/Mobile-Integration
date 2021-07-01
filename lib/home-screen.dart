@@ -6,7 +6,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Uber Eats"),
-        backgroundColor: Color(0xFF8335E8),
+        backgroundColor: Color(0xFF0C1918),
       ),
     );
   }
