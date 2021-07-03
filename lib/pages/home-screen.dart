@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'home-page.dart';
+
 class HomeScreen extends StatefulWidget {
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -20,7 +22,6 @@ class _HomeScreenState extends State<HomeScreen> {
     return IndexedStack(
       index: activeTab,
       children: [
-        HomePage(),
         Center(
           child: Text(
             "Inicio",
