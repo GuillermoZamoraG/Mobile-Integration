@@ -1,4 +1,6 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/loginSC.dart';
 
 import 'home-page.dart';
 
@@ -8,6 +10,27 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int activeTab = 0;
+  List regUsuarios = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _getUsers();
+  }
+
+  void _getUsers() async {
+    CollectionReference referencia =
+        FirebaseFirestore.instance.collection("sesiones");
+
+    QuerySnapshot usuario = await referencia.get();
+
+    if (usuario.docs.length != 0) {
+      for (var doc in usuario.docs) {
+        regUsuarios = [doc.data()];
+      }
+      print(regUsuarios[0]);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -22,13 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return IndexedStack(
       index: activeTab,
       children: [
-        Center(
-          child: Text(
-            "Inicio",
-            style: TextStyle(
-                fontSize: 20, color: Colors.black, fontWeight: FontWeight.bold),
-          ),
-        ),
+        HomePage(),
         Center(
           child: Text(
             "Explorar",
@@ -44,12 +61,20 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         Center(
-          child: Text(
-            "Cuenta",
-            style: TextStyle(
-                fontSize: 20, color: Colors.black, fontWeight: FontWeight.bold),
-          ),
-        ),
+            child: ElevatedButton(
+                child: Text('Cerrar Sesión'),
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.green, // background
+                  onPrimary: Colors.white, // foreground
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => LoginSC(),
+                    ),
+                  );
+                })),
       ],
     );
   }

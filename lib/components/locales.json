@@ -1,0 +1,66 @@
+{
+    "locales" : [
+        {
+            "id" : "1",
+            "nombre": "Doggy Style", 
+            "desc": "Descripcion corta del local."
+        },
+            
+        {
+            "id" : "2",
+            "nombre": "Benito Martinez", 
+            "desc": "Descripcion corta del local."
+        },
+        
+        {
+            "id" : "3",
+            "nombre": "Le Bodoque", 
+            "desc": "Descripcion corta del local."
+        },
+            
+        {
+            "id" : "4",
+            "nombre": "Guaripolo's foods", 
+            "desc": "Descripcion corta del local."
+        },
+            
+        {
+            "id" : "5",
+            "nombre": "TopTopTop", 
+            "desc": "Descripcion corta del local."
+        },
+            
+        {
+            "id" : "6",
+            "nombre": "Hermoso y desconocido", 
+            "desc": "Descripcion corta del local."
+        },
+            
+        {
+            "id" : "7",
+            "nombre": "Tulio y otros", 
+            "desc": "Descripcion corta del local."
+        },
+            
+        {
+            "id" : "8",
+            "nombre": "La sombra", 
+            "desc": "Descripcion corta del local."
+        },
+            
+        {
+            "id" : "9",
+            "nombre": "Corchetis", 
+            "desc": "Descripcion corta del local."
+        },
+            
+        {
+            "id" : "10",
+            "nombre": "Estamos al aire", 
+            "desc": "Descripcion corta del local."
+        }
+    ]
+}
+
+
+

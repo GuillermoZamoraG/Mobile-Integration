@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "22228538619",
+    "project_id": "modulo-mobile",
+    "storage_bucket": "modulo-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22228538619:android:05895812e5631b037acc5e",
+        "android_client_info": {
+          "package_name": "com.ubereats.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22228538619-591p3n37j0h4uqit9upni3jblqefd7lu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVD38aiZFbDrD8dxpzPZDMOdSUAfnxBj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22228538619-591p3n37j0h4uqit9upni3jblqefd7lu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

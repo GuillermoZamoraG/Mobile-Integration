@@ -3,6 +3,9 @@
    <application
         android:label="flutter_application_1"
         android:icon="@mipmap/ic_launcher">
+        <meta-data 
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA8AJPMv_2DEGJqz3nFkAZsRMkv8GABGTc" />
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
