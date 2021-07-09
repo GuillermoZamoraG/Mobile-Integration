@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/home-screen.dart';
+import 'package:flutter_application_1/pages/loginSC.dart';
 
 class StartScreen extends StatelessWidget {
   void initState() {}
@@ -21,7 +21,7 @@ class StartScreen extends StatelessWidget {
   void _goToHome(BuildContext context) {
     Future.delayed(Duration(seconds: 3), () {
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-        return HomeScreen();
+        return LoginSC();
       }));
     });
   }
